@@ -44,6 +44,9 @@ elif [[ ${SOURCE_CODE} == "IMMORTAL" ]]; then
 elif [[ ${SOURCE_CODE} == "TIANLING" ]]; then
   export REPO_URL="https://github.com/immortalwrt/immortalwrt"
   export REPO_BRANCH="openwrt-18.06"
+elif [[ ${SOURCE_CODE} == "ISTOREOS" ]]; then
+  export REPO_URL="https://github.com/istoreos/istoreos"
+  export REPO_BRANCH="istoreos-21.02"
 else
   TIME r "没有发现该源码,或者源码获取方法已更改,请同步上游仓库，或者重新拉取上游仓库，特别留意settings.ini的更改"
   exit 1
