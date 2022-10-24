@@ -317,6 +317,15 @@ menu() {
     Firmware_Path
     menuws
     clear
+  elif [[ ${SOURCE} == "iStoreOS" ]]; then
+    export MAINTAIN_1="18.06-Lede"
+    export MAINTAIN_2="21.02-iStoreOS"
+    export MAINTAIN_3="21.02-Lienol"
+    export tixinggg="Lede、Mortal或Lienol"
+    opapi
+    Firmware_Path
+    menuws
+    clear
   else
     print_error "没检测到您现有的源码作者!"
     exit 1
